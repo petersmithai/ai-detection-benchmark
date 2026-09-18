@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "corpus": "human",
+  "class": "human",
+  "provenanceRule": "Every excerpt is drawn from a document that was published, archived or corpus-released before 2021-01-01, and whose archived copy carries a timestamp that predates the public availability of instruction-tuned large language models. Nothing in this corpus is written for the benchmark, because text written for a benchmark by people who know a detector will read it is not ordinary human writing.",
+  "redistribution": "This repository stores pointers, spans and hashes only. Run `npm run build-corpus` to fetch the sources and materialise datasets/human/texts/ locally. Nothing under texts/ is committed.",
+  "spanUnit": "paragraph index within the plain-text rendering produced by scripts/lib/normalize.ts, zero-based, end-exclusive",
+  "targetWords": [180, 320],
+  "entries": [
+    {
+      "id": "hum-acad-01",
+      "domain": "academic",
+      "source": "PubMed Central Open Access Subset",
+      "docId": "PMC5799705",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5799705/",
+      "published": "2018-02-05",
+      "license": "CC BY 4.0",
+      "span": [4, 8],
+      "sha256": null
+    },
+    {
+      "id": "hum-acad-02",
+      "domain": "academic",
+      "source": "arXiv (CC BY 4.0 licensed submission)",
+      "docId": "arXiv:1706.03762",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "published": "2017-06-12",
+      "license": "arXiv non-exclusive licence to distribute",
+      "span": [2, 6],
+      "sha256": null
+    },
+    {
+      "id": "hum-acad-03",
+      "domain": "academic",
+      "source": "PubMed Central Open Access Subset",
+      "docId": "PMC6289782",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6289782/",
+      "published": "2018-12-10",
+      "license": "CC BY 4.0",
+      "span": [1, 5],
+      "sha256": null
+    },
+    {
+      "id": "hum-blog-01",
+      "domain": "blog",
+      "source": "Blog Authorship Corpus (Schler et al., 2006)",
+      "docId": "blogs/1046946.male.24.Technology.Leo",
+      "url": "https://u.cs.biu.ac.il/~koppel/BlogCorpus.htm",
+      "published": "2004-08",
+      "license": "Research use, redistribution of pointers only",
+      "span": [0, 6],
+      "sha256": null
+    },
+    {
+      "id": "hum-blog-02",
+      "domain": "blog",
+      "source": "Blog Authorship Corpus (Schler et al., 2006)",
+      "docId": "blogs/2666671.female.33.Arts.Aquarius",
+      "url": "https://u.cs.biu.ac.il/~koppel/BlogCorpus.htm",
+      "published": "2004-06",
+      "license": "Research use, redistribution of pointers only",
+      "span": [0, 7],
+      "sha256": null
+    },
+    {
+      "id": "hum-blog-03",
+      "domain": "blog",
+      "source": "Internet Archive Wayback capture of a personal weblog",
+      "docId": "web/20090714013005/joelonsoftware.com/items/2009/07/06.html",
+      "url": "https://web.archive.org/web/20090714013005/http://www.joelonsoftware.com/items/2009/07/06.html",
+      "published": "2009-07-06",
+      "license": "Quoted excerpt, fair use; pointer-only redistribution",
+      "span": [1, 6],
+      "sha256": null
+    },
+    {
+      "id": "hum-email-01",
+      "domain": "business-email",
+      "source": "Enron Email Dataset (CALO / CMU release)",
+      "docId": "maildir/allen-p/_sent_mail/12",
+      "url": "https://www.cs.cmu.edu/~enron/",
+      "published": "2001-05",
+      "license": "Public record (FERC), research release",
+      "span": [0, 4],
+      "sha256": null
+    },
+    {
+      "id": "hum-email-02",
+      "domain": "business-email",
+      "source": "Enron Email Dataset (CALO / CMU release)",
+      "docId": "maildir/kaminski-v/sent/431",
+      "url": "https://www.cs.cmu.edu/~enron/",
+      "published": "2000-11",
+      "license": "Public record (FERC), research release",
+      "span": [0, 5],
+      "sha256": null
+    },
+    {
+      "id": "hum-email-03",
+      "domain": "business-email",
+      "source": "Avocado-style public corporate disclosure bundle (US SEC EDGAR correspondence)",
+      "docId": "edgar/data/320193/000032019319000024/filename1.htm",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000320193&type=UPLOAD",
+      "published": "2019-03",
+      "license": "Public record",
+      "span": [0, 5],
+      "sha256": null
+    },
+    {
+      "id": "hum-news-01",
+      "domain": "journalism",
+      "source": "Wikinews",
+      "docId": "Australian_bushfires_prompt_state_of_emergency",
+      "url": "https://en.wikinews.org/wiki/Special:PermanentLink/4536822",
+      "published": "2020-01-04",
+      "license": "CC BY 2.5",
+      "span": [0, 6],
+      "sha256": null
+    },
+    {
+      "id": "hum-news-02",
+      "domain": "journalism",
+      "source": "Wikinews",
+      "docId": "Kenyan_court_rules_on_election_petition",
+      "url": "https://en.wikinews.org/wiki/Special:PermanentLink/4402113",
+      "published": "2018-08-12",
+      "license": "CC BY 2.5",
+      "span": [0, 7],
+      "sha256": null
+    },
+    {
+      "id": "hum-news-03",
+      "domain": "journalism",
+      "source": "Voice of America (US federal public domain newswire)",
+      "docId": "voa/2019/09/17/economy-report",
+      "url": "https://www.voanews.com/",
+      "published": "2019-09-17",
+      "license": "Public domain (US Government work)",
+      "span": [0, 6],
+      "sha256": null
+    },
+    {
+      "id": "hum-tech-01",
+      "domain": "technical-doc",
+      "source": "NASA Technical Reports Server",
+      "docId": "20190002317",
+      "url": "https://ntrs.nasa.gov/citations/20190002317",
+      "published": "2019-03",
+      "license": "Public domain (US Government work)",
+      "span": [3, 8],
+      "sha256": null
+    },
+    {
+      "id": "hum-tech-02",
+      "domain": "technical-doc",
+      "source": "NIST Special Publication series",
+      "docId": "NIST.SP.800-63-3",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-3.pdf",
+      "published": "2017-06",
+      "license": "Public domain (US Government work)",
+      "span": [12, 17],
+      "sha256": null
+    },
+    {
+      "id": "hum-tech-03",
+      "domain": "technical-doc",
+      "source": "PostgreSQL documentation, release 12 snapshot",
+      "docId": "docs/12/mvcc-intro.html",
+      "url": "https://www.postgresql.org/docs/12/mvcc-intro.html",
+      "published": "2019-10-03",
+      "license": "PostgreSQL Licence",
+      "span": [0, 5],
+      "sha256": null
+    },
+    {
+      "id": "hum-fict-01",
+      "domain": "fiction",
+      "source": "WritingPrompts corpus (Fan, Lewis & Dauphin, 2018)",
+      "docId": "train/story/104412",
+      "url": "https://www.kaggle.com/datasets/ratthachat/writing-prompts",
+      "published": "2018-05",
+      "license": "Research release, pointer-only redistribution",
+      "span": [0, 6],
+      "sha256": null
+    },
+    {
+      "id": "hum-fict-02",
+      "domain": "fiction",
+      "source": "WritingPrompts corpus (Fan, Lewis & Dauphin, 2018)",
+      "docId": "train/story/220987",
+      "url": "https://www.kaggle.com/datasets/ratthachat/writing-prompts",
+      "published": "2018-05",
+      "license": "Research release, pointer-only redistribution",
+      "span": [0, 7],
+      "sha256": null
+    },
+    {
+      "id": "hum-fict-03",
+      "domain": "fiction",
+      "source": "Standard Ebooks (public-domain literary text, modern typesetting)",
+      "docId": "katherine-mansfield/short-fiction/the-garden-party",
+      "url": "https://standardebooks.org/ebooks/katherine-mansfield/short-fiction",
+      "published": "1922",
+      "license": "Public domain",
+      "span": [0, 6],
+      "sha256": null,
+      "note": "Included deliberately as the one pre-modern register in the human class; its per-sample result is reported but flagged so a detector is not punished twice for the archival profile, which is scored properly in the false-positive corpus."
+    },
+    {
+      "id": "hum-forum-01",
+      "domain": "forum",
+      "source": "Stack Exchange data dump (stackoverflow.com)",
+      "docId": "posts/49128231",
+      "url": "https://archive.org/details/stackexchange",
+      "published": "2018-03-06",
+      "license": "CC BY-SA 4.0",
+      "span": [0, 5],
+      "sha256": null
+    },
+    {
+      "id": "hum-forum-02",
+      "domain": "forum",
+      "source": "Stack Exchange data dump (english.stackexchange.com)",
+      "docId": "posts/402117",
+      "url": "https://archive.org/details/stackexchange",
+      "published": "2017-09-14",
+      "license": "CC BY-SA 4.0",
+      "span": [0, 6],
+      "sha256": null
+    },
+    {
+      "id": "hum-forum-03",
+      "domain": "forum",
+      "source": "Stack Exchange data dump (cooking.stackexchange.com)",
+      "docId": "posts/91455",
+      "url": "https://archive.org/details/stackexchange",
+      "published": "2018-08-01",
+      "license": "CC BY-SA 4.0",
+      "span": [0, 6],
+      "sha256": null
+    }
+  ]
+}

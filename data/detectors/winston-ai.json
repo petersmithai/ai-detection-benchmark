@@ -1,0 +1,24 @@
+{
+  "slug": "winston-ai",
+  "name": "Winston AI",
+  "vendor": "Winston AI",
+  "url": "https://gowinston.ai/",
+  "note": "Per-cycle history. Populated by npm run score once a cycle is published; a synthetic cycle never writes here.",
+  "cycles": [
+    {
+      "cycle": "2026-08",
+      "publishedAt": "2026-09-03",
+      "rank": 1,
+      "composite": 91.7,
+      "metrics": {
+        "aiRecall": 0.9286,
+        "humanSpecificity": 1,
+        "fpResistance": 1,
+        "hybridAccuracy": 0.7993,
+        "consistency": 0.6143
+      },
+      "falsePositiveRate": 0.0408,
+      "hybridMeanAbsError": 0.2007
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "corpus": "hybrid",
+  "class": "hybrid",
+  "why": "Almost no real document is 100% one thing. The common cases are a human draft with AI-expanded sections, an AI draft a person edited down, and a document two authors touched in alternation. A detector that only answers 'AI' or 'human' cannot describe any of these, and a detector that answers '73%' should be right about the 73.",
+  "construction": "Each hybrid is built by scripts/build-corpus.ts from one human sample and one AI sample in the same domain, spliced at sentence boundaries. Because the splice is mechanical, the ground-truth AI fraction is exact rather than estimated: aiFraction = (words contributed by the AI source) / (total words). Sentence-level provenance is recorded per sample so sentence-granular detectors can be scored on localisation as well as on the document total.",
+  "noSmoothing": "The splice does not rewrite the seam. Adding transition sentences would mean writing new text of unknown provenance into a ground-truth corpus. Seams are therefore visible to a careful human reader, which is the honest version of this test: a detector that still cannot localise them has no localisation.",
+  "ratios": [0.25, 0.5, 0.75],
+  "ratioTolerance": 0.04,
+  "modes": {
+    "human-draft-ai-expanded": "Human opening and close, one contiguous AI block inserted in the middle. Models the 'I wrote it, I asked a model to flesh out section 2' case.",
+    "ai-draft-human-edited": "AI throughout with human sentences replacing a contiguous run. Models the 'model drafted it, I rewrote the parts that were wrong' case.",
+    "alternating": "Sentence-level interleaving on a fixed stride. The hardest localisation case and the least common in the wild; included as the upper bound of difficulty."
+  },
+  "plan": [
+    { "id": "hyb-acad-25", "domain": "academic",      "aiFractionTarget": 0.25, "mode": "human-draft-ai-expanded", "humanSource": "hum-acad-01", "aiSource": "ai-academic-1" },
+    { "id": "hyb-acad-50", "domain": "academic",      "aiFractionTarget": 0.5,  "mode": "alternating",            "humanSource": "hum-acad-02", "aiSource": "ai-academic-2" },
+    { "id": "hyb-acad-75", "domain": "academic",      "aiFractionTarget": 0.75, "mode": "ai-draft-human-edited",  "humanSource": "hum-acad-03", "aiSource": "ai-academic-3" },
+
+    { "id": "hyb-blog-25", "domain": "blog",          "aiFractionTarget": 0.25, "mode": "human-draft-ai-expanded", "humanSource": "hum-blog-01", "aiSource": "ai-blog-1" },
+    { "id": "hyb-blog-50", "domain": "blog",          "aiFractionTarget": 0.5,  "mode": "ai-draft-human-edited",  "humanSource": "hum-blog-02", "aiSource": "ai-blog-2" },
+    { "id": "hyb-blog-75", "domain": "blog",          "aiFractionTarget": 0.75, "mode": "alternating",            "humanSource": "hum-blog-03", "aiSource": "ai-blog-3" },
+
+    { "id": "hyb-email-25", "domain": "business-email", "aiFractionTarget": 0.25, "mode": "ai-draft-human-edited",  "humanSource": "hum-email-01", "aiSource": "ai-business-email-1" },
+    { "id": "hyb-email-50", "domain": "business-email", "aiFractionTarget": 0.5,  "mode": "human-draft-ai-expanded", "humanSource": "hum-email-02", "aiSource": "ai-business-email-2" },
+    { "id": "hyb-email-75", "domain": "business-email", "aiFractionTarget": 0.75, "mode": "alternating",            "humanSource": "hum-email-03", "aiSource": "ai-business-email-3" },
+
+    { "id": "hyb-news-25", "domain": "journalism",    "aiFractionTarget": 0.25, "mode": "alternating",            "humanSource": "hum-news-01", "aiSource": "ai-journalism-1" },
+    { "id": "hyb-news-50", "domain": "journalism",    "aiFractionTarget": 0.5,  "mode": "human-draft-ai-expanded", "humanSource": "hum-news-02", "aiSource": "ai-journalism-2" },
+    { "id": "hyb-news-75", "domain": "journalism",    "aiFractionTarget": 0.75, "mode": "ai-draft-human-edited",  "humanSource": "hum-news-03", "aiSource": "ai-journalism-3" },
+
+    { "id": "hyb-tech-25", "domain": "technical-doc", "aiFractionTarget": 0.25, "mode": "human-draft-ai-expanded", "humanSource": "hum-tech-01", "aiSource": "ai-technical-doc-1" },
+    { "id": "hyb-tech-50", "domain": "technical-doc", "aiFractionTarget": 0.5,  "mode": "alternating",            "humanSource": "hum-tech-02", "aiSource": "ai-technical-doc-2" },
+    { "id": "hyb-tech-75", "domain": "technical-doc", "aiFractionTarget": 0.75, "mode": "ai-draft-human-edited",  "humanSource": "hum-tech-03", "aiSource": "ai-technical-doc-3" },
+
+    { "id": "hyb-fict-25", "domain": "fiction",       "aiFractionTarget": 0.25, "mode": "ai-draft-human-edited",  "humanSource": "hum-fict-01", "aiSource": "ai-fiction-1" },
+    { "id": "hyb-fict-50", "domain": "fiction",       "aiFractionTarget": 0.5,  "mode": "human-draft-ai-expanded", "humanSource": "hum-fict-02", "aiSource": "ai-fiction-2" },
+    { "id": "hyb-fict-75", "domain": "fiction",       "aiFractionTarget": 0.75, "mode": "alternating",            "humanSource": "hum-fict-03", "aiSource": "ai-fiction-3" },
+
+    { "id": "hyb-forum-25", "domain": "forum",        "aiFractionTarget": 0.25, "mode": "alternating",            "humanSource": "hum-forum-01", "aiSource": "ai-forum-1" },
+    { "id": "hyb-forum-50", "domain": "forum",        "aiFractionTarget": 0.5,  "mode": "ai-draft-human-edited",  "humanSource": "hum-forum-02", "aiSource": "ai-forum-2" },
+    { "id": "hyb-forum-75", "domain": "forum",        "aiFractionTarget": 0.75, "mode": "human-draft-ai-expanded", "humanSource": "hum-forum-03", "aiSource": "ai-forum-3" }
+  ]
+}

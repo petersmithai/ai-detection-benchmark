@@ -1,0 +1,8 @@
+{
+  "slug": "brandwell",
+  "name": "BrandWell AI Detector",
+  "vendor": "BrandWell (formerly Content at Scale)",
+  "url": "https://brandwell.ai/ai-content-detector/",
+  "note": "Per-cycle history. Populated by npm run score once a cycle is published; a synthetic cycle never writes here.",
+  "cycles": []
+}

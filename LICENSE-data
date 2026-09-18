@@ -1,0 +1,32 @@
+# Data licence
+
+Everything under `data/`, together with the manifests and specifications under
+`datasets/`, is licensed **Creative Commons Attribution 4.0 International
+(CC BY 4.0)**: https://creativecommons.org/licenses/by/4.0/
+
+You may copy, redistribute, adapt and build on it, including commercially, with
+attribution to this repository.
+
+## What this does not cover
+
+**Source texts are not licensed by this repository, because this repository does
+not distribute them.**
+
+The manifests carry pointers, spans, licences and SHA-256 hashes. The texts
+themselves are fetched by whoever runs a cycle, from the sources named in the
+manifests, and are git-ignored. Each remains under its own licence — CC BY,
+CC BY-SA, public domain, or a research-use release — and those terms are what
+govern your use of it.
+
+If you redistribute anything you build on this benchmark, attribute the source
+corpora as their own licences require. Where a manifest entry names a corpus with
+a citation (FCE, Blog Authorship, WritingPrompts, Europarl), cite the original
+paper.
+
+## Attribution
+
+> AI Detection Benchmark, https://github.com/petersmithai/ai-detection-benchmark,
+> CC BY 4.0. Cycle: <cycle id>.
+
+Cite the cycle. A number without a cycle id is not a citation of anything — the
+products change between them.

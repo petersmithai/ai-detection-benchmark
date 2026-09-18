@@ -1,0 +1,24 @@
+{
+  "slug": "gptzero",
+  "name": "GPTZero",
+  "vendor": "GPTZero",
+  "url": "https://gptzero.me/",
+  "note": "Per-cycle history. Populated by npm run score once a cycle is published; a synthetic cycle never writes here.",
+  "cycles": [
+    {
+      "cycle": "2026-08",
+      "publishedAt": "2026-09-03",
+      "rank": 3,
+      "composite": 85.4,
+      "metrics": {
+        "aiRecall": 0.9286,
+        "humanSpecificity": 1,
+        "fpResistance": 0.8095,
+        "hybridAccuracy": 0.8251,
+        "consistency": 0.6123
+      },
+      "falsePositiveRate": 0.1429,
+      "hybridMeanAbsError": 0.1749
+    }
+  ]
+}

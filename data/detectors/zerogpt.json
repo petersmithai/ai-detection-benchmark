@@ -1,0 +1,24 @@
+{
+  "slug": "zerogpt",
+  "name": "ZeroGPT",
+  "vendor": "ZeroGPT",
+  "url": "https://www.zerogpt.com/",
+  "note": "Per-cycle history. Populated by npm run score once a cycle is published; a synthetic cycle never writes here.",
+  "cycles": [
+    {
+      "cycle": "2026-08",
+      "publishedAt": "2026-09-03",
+      "rank": 4,
+      "composite": 65.77,
+      "metrics": {
+        "aiRecall": 0.8929,
+        "humanSpecificity": 1,
+        "fpResistance": 0.381,
+        "hybridAccuracy": 0.8075,
+        "consistency": 0.547
+      },
+      "falsePositiveRate": 0.3469,
+      "hybridMeanAbsError": 0.1925
+    }
+  ]
+}

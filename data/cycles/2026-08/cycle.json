@@ -1,0 +1,15 @@
+{
+  "cycle": "2026-08",
+  "publishedAt": "2026-09-03",
+  "status": "published",
+  "scoringVersion": "2.0.0",
+  "samples": 91,
+  "readings": 910,
+  "files": {
+    "commit.json": "9e182839889cb6931eb89a9c59d7243585de92fd56ab7d7eed8e656418b0e09b",
+    "detector-results.json": "7254fc3e2fe5764f45b476743b97f7bf2ecdec0db425562166d60cd0be65ab1f",
+    "leaderboard.json": "f93d2afe4cc780739779139f47653282c8c10347a825f7487da8dace02635597",
+    "samples.json": "37b543e7c78dba4aecce55214cc9a74ecf0c4454e75fc078ddfa566e2db19023",
+    "scoring.js": "451c7b44d1b6e8c76f214ad1628c1a4c97a6c39d925d1be1bca39007800ed5fb"
+  }
+}

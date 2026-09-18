@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "note": "Value banks for template placeholders. Banks are fixed at cycle open and hashed into commit.json. Growing a bank between cycles is a methodology change and must be recorded in CHANGES.md.",
+  "banks": {
+    "FIELD": ["sociology", "environmental science", "economic history", "public health", "comparative literature", "political theory", "developmental psychology", "urban planning"],
+    "TOPIC_ACADEMIC": [
+      "the effect of remote work on urban tax bases",
+      "how oral tradition shapes historical record-keeping",
+      "the role of soil microbiomes in carbon sequestration",
+      "vaccine hesitancy as a communications failure",
+      "the unreliable narrator in postwar fiction",
+      "whether deliberative polling improves policy legitimacy",
+      "attachment theory and early childhood education outcomes",
+      "the displacement effects of transit-oriented development"
+    ],
+    "LEVEL": ["undergraduate", "master's level", "first-year", "final-year"],
+    "TOPIC_BLOG": [
+      "why your first budgeting app always fails",
+      "what nobody tells you about adopting a rescue dog",
+      "switching from coffee to tea for six months",
+      "how to read a rental contract before signing it",
+      "the case for keeping a paper notebook",
+      "starting a vegetable garden in a rented flat",
+      "what a year of commuting by bike actually costs",
+      "how to plan a holiday without an itinerary"
+    ],
+    "AUDIENCE": ["first-time renters", "small business owners", "new parents", "people in their first job", "hobbyist gardeners", "freelance designers"],
+    "ROLE": ["project manager", "HR coordinator", "account executive", "operations lead", "school administrator", "clinic office manager"],
+    "EMAIL_SITUATION": [
+      "telling a client that a delivery date has slipped by two weeks",
+      "asking a supplier to explain an unexpected invoice",
+      "declining a vendor's proposal after a long evaluation",
+      "introducing a new process to a team that did not ask for one",
+      "following up after a meeting where nothing was decided",
+      "asking a colleague to take over a task you are behind on"
+    ],
+    "NEWS_EVENT": [
+      "a regional water utility has been fined for reporting failures",
+      "a mid-sized manufacturer is closing a plant of 400 people",
+      "a city council has voted to make its bus network fare-free",
+      "a long-running rail upgrade has been delayed a fourth time",
+      "a university has reversed a controversial admissions change",
+      "a national park has reintroduced a native predator species"
+    ],
+    "OUTLET_STYLE": ["local newspaper", "wire service", "trade publication", "regional broadcaster"],
+    "TECH_SUBJECT": [
+      "a REST endpoint that issues short-lived download links",
+      "a background job that reconciles two payment ledgers",
+      "a feature flag service used by four product teams",
+      "a rate limiter shared across a fleet of API gateways",
+      "a migration that backfills a denormalised column",
+      "an on-call runbook for a queue that has stopped draining"
+    ],
+    "DOC_TYPE": ["API reference page", "design document summary", "release note", "runbook section", "onboarding guide section"],
+    "FICTION_PREMISE": [
+      "a night watchman finds the building's floor plan has changed",
+      "two estranged siblings meet to sell their mother's house",
+      "a translator realises the letters she is paid to translate are addressed to her",
+      "a village stops receiving post and nobody reports it",
+      "a chess coach recognises a move only one dead player ever used",
+      "the last ferry of the season leaves with one passenger too many"
+    ],
+    "TONE": ["quiet and restrained", "wry", "tense", "melancholy", "matter-of-fact"],
+    "FORUM_QUESTION": [
+      "why does my dough tear when I stretch it?",
+      "is it worth repairing a ten-year-old washing machine?",
+      "what is the difference between 'affect' and 'effect' in this sentence?",
+      "how do I stop a shell script from failing silently?",
+      "my landlord wants to enter without notice, what are my rights?",
+      "how do I keep basil alive past three weeks?"
+    ],
+    "FORUM_VENUE": ["a Stack Exchange site", "a hobbyist forum", "a subreddit", "a community Q&A board"]
+  }
+}

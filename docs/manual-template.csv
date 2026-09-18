@@ -1,0 +1,15 @@
+# Manual collection template for detectors with no public API.
+# Copy to data/cycles/<cycle>/manual/<detector-slug>.csv and fill one row per
+# sample per operator. Operator 1's readings are run 1, operator 2's are run 2;
+# the two operators must not see each other's numbers while collecting.
+#
+# aiProbability: 0-100 as the tool reports it, or the literal word `refused`
+# when the tool declines to score the sample. Never guess a number.
+# Where two operators differ by more than 10 points, a third reads it and the
+# outlier is replaced — note that in the cycle notes.
+#
+# Lines starting with # are ignored by scripts/import-manual.ts.
+sampleId,run,aiProbability,operator,collectedAt
+hum-acad-01,1,4,operator-1,2026-10-04T09:12:00Z
+hum-acad-01,2,7,operator-2,2026-10-04T15:40:00Z
+fp-esl-01,1,refused,operator-1,2026-10-04T09:15:00Z

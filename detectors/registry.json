@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "note": "Ordering in this file is alphabetical-by-nothing: it is the fixed run order used by scripts/run-detectors.ts and carries no ranking meaning. Rankings live in data/cycles/<cycle>/leaderboard.json.",
+  "thresholdPolicy": "Every detector is scored at the decision threshold its own vendor documents for an 'AI' verdict. Where a vendor publishes a band instead of a number, the low edge of the 'likely AI' band is used. Thresholds are frozen for the whole cycle and recorded here so a re-run cannot silently move a goalpost.",
+  "detectors": [
+    {
+      "slug": "winston-ai",
+      "name": "Winston AI",
+      "vendor": "Winston AI",
+      "url": "https://gowinston.ai/",
+      "access": "api",
+      "api": {
+        "endpoint": "https://api.gowinston.ai/v2/ai-content-detection",
+        "method": "POST",
+        "auth": "bearer",
+        "keyEnv": "WINSTON_API_KEY",
+        "bodyTemplate": {
+          "text": "{{TEXT}}",
+          "sentences": true,
+          "version": "latest"
+        },
+        "scorePath": "score",
+        "scoreScale": "human-0-100",
+        "sentencePath": "sentences"
+      },
+      "threshold": 50,
+      "granularity": "sentence",
+      "minWords": 60,
+      "plan": "Business (metered credits)",
+      "notes": "Vendor score is a human-likeness score: 100 = fully human. The adapter inverts it to an AI probability before scoring so every detector is compared on one axis."
+    },
+    {
+      "slug": "originality-ai",
+      "name": "Originality.ai",
+      "vendor": "Originality.ai",
+      "url": "https://originality.ai/",
+      "access": "api",
+      "api": {
+        "endpoint": "https://api.originality.ai/api/v1/scan/ai",
+        "method": "POST",
+        "auth": "header",
+        "authHeader": "X-OAI-API-KEY",
+        "keyEnv": "ORIGINALITY_API_KEY",
+        "bodyTemplate": {
+          "content": "{{TEXT}}",
+          "aiModelVersion": "lite"
+        },
+        "scorePath": "score.ai",
+        "scoreScale": "ai-0-100"
+      },
+      "threshold": 50,
+      "granularity": "sentence",
+      "minWords": 50,
+      "plan": "Pro (credit metered)",
+      "notes": "Model version is pinned per cycle. Turbo and Lite are scored as one entry using the model the vendor markets as default at cycle open. Reports ai_confidence on a 0-100 scale in the 2026-08 run logs, not 0-1."
+    },
+    {
+      "slug": "gptzero",
+      "name": "GPTZero",
+      "vendor": "GPTZero",
+      "url": "https://gptzero.me/",
+      "access": "api",
+      "api": {
+        "endpoint": "https://api.gptzero.me/v2/predict/text",
+        "method": "POST",
+        "auth": "header",
+        "authHeader": "x-api-key",
+        "keyEnv": "GPTZERO_API_KEY",
+        "bodyTemplate": {
+          "document": "{{TEXT}}",
+          "multilingual": false
+        },
+        "scorePath": "documents.0.class_probabilities.ai",
+        "scoreScale": "ai-0-1",
+        "sentencePath": "documents.0.sentences"
+      },
+      "threshold": 50,
+      "granularity": "sentence",
+      "minWords": 45,
+      "plan": "Essential API",
+      "notes": "Reports a three-class distribution (human / ai / mixed). The AI class probability is used; the mixed mass is reported separately in the hybrid analysis."
+    },
+    {
+      "slug": "copyleaks",
+      "name": "Copyleaks AI Detector",
+      "vendor": "Copyleaks",
+      "url": "https://copyleaks.com/ai-content-detector",
+      "access": "api",
+      "api": {
+        "endpoint": "https://api.copyleaks.com/v2/writer-detector/{{SCAN_ID}}/check",
+        "method": "POST",
+        "auth": "bearer",
+        "keyEnv": "COPYLEAKS_API_KEY",
+        "loginEndpoint": "https://id.copyleaks.com/v3/account/login/api",
+        "bodyTemplate": {
+          "text": "{{TEXT}}",
+          "sandbox": false
+        },
+        "scorePath": "summary.ai",
+        "scoreScale": "ai-0-100",
+        "sentencePath": "results"
+      },
+      "threshold": 50,
+      "granularity": "sentence",
+      "minWords": 55,
+      "plan": "AI Detector API",
+      "notes": "Requires a login exchange for a short-lived bearer token; the adapter caches it for the run. Reports ai_percent on a 0-100 scale in the 2026-08 run logs; the earlier 0-1 assumption in this file was wrong and would have clamped every reading to 100."
+    },
+    {
+      "slug": "sapling",
+      "name": "Sapling AI Detector",
+      "vendor": "Sapling",
+      "url": "https://sapling.ai/ai-content-detector",
+      "access": "api",
+      "api": {
+        "endpoint": "https://api.sapling.ai/api/v1/aidetect",
+        "method": "POST",
+        "auth": "body",
+        "keyEnv": "SAPLING_API_KEY",
+        "bodyTemplate": {
+          "key": "{{KEY}}",
+          "text": "{{TEXT}}",
+          "sent_scores": true
+        },
+        "scorePath": "score",
+        "scoreScale": "ai-0-1",
+        "sentencePath": "sentence_scores"
+      },
+      "threshold": 50,
+      "granularity": "sentence",
+      "minWords": 40,
+      "plan": "Metered (per 1k characters)",
+      "notes": "Cheapest per-character API in the field, which makes it the usual choice for bulk pre-screening."
+    },
+    {
+      "slug": "undetectable-ai",
+      "name": "Undetectable.ai Detector",
+      "vendor": "Undetectable.ai",
+      "url": "https://undetectable.ai/ai-detector",
+      "access": "api",
+      "api": {
+        "endpoint": "https://api.undetectable.ai/detect",
+        "method": "POST",
+        "auth": "header",
+        "authHeader": "api-key",
+        "keyEnv": "UNDETECTABLE_API_KEY",
+        "bodyTemplate": {
+          "text": "{{TEXT}}"
+        },
+        "scorePath": "result",
+        "scoreScale": "ai-0-100"
+      },
+      "threshold": 50,
+      "granularity": "document",
+      "minWords": 50,
+      "plan": "Detector API",
+      "notes": "Aggregates several third-party detectors behind one call. Included because it is widely used as a pre-publication gate, but its verdict is a committee vote, not an independent model."
+    },
+    {
+      "slug": "zerogpt",
+      "name": "ZeroGPT",
+      "vendor": "ZeroGPT",
+      "url": "https://www.zerogpt.com/",
+      "access": "api",
+      "api": {
+        "endpoint": "https://api.zerogpt.com/api/detect/detectText",
+        "method": "POST",
+        "auth": "header",
+        "authHeader": "ApiKey",
+        "keyEnv": "ZEROGPT_API_KEY",
+        "bodyTemplate": {
+          "input_text": "{{TEXT}}"
+        },
+        "scorePath": "data.fakePercentage",
+        "scoreScale": "ai-0-100",
+        "sentencePath": "data.h"
+      },
+      "threshold": 50,
+      "granularity": "sentence",
+      "minWords": 40,
+      "plan": "Free tier + API",
+      "notes": "The most widely used free detector, and therefore the one whose false positives do the most real-world damage."
+    },
+    {
+      "slug": "smodin",
+      "name": "Smodin AI Content Detector",
+      "vendor": "Smodin",
+      "url": "https://smodin.io/ai-content-detector",
+      "access": "api",
+      "api": {
+        "endpoint": "https://api.smodin.io/v1/ai-detection",
+        "method": "POST",
+        "auth": "header",
+        "authHeader": "X-API-KEY",
+        "keyEnv": "SMODIN_API_KEY",
+        "bodyTemplate": {
+          "text": "{{TEXT}}",
+          "language": "en"
+        },
+        "scorePath": "ai_percentage",
+        "scoreScale": "ai-0-100"
+      },
+      "threshold": 50,
+      "granularity": "document",
+      "minWords": 50,
+      "plan": "Productive",
+      "notes": null
+    },
+    {
+      "slug": "isgen",
+      "name": "Isgen",
+      "vendor": "Isgen",
+      "url": "https://isgen.ai/",
+      "access": "api",
+      "api": {
+        "endpoint": "https://api.isgen.ai/v1/detect",
+        "method": "POST",
+        "auth": "bearer",
+        "keyEnv": "ISGEN_API_KEY",
+        "bodyTemplate": {
+          "text": "{{TEXT}}"
+        },
+        "scorePath": "ai_probability",
+        "scoreScale": "ai-0-1",
+        "sentencePath": "segments"
+      },
+      "threshold": 50,
+      "granularity": "sentence",
+      "minWords": 50,
+      "plan": "Pro",
+      "notes": "Markets multilingual detection; only the English corpus is scored in this cycle."
+    },
+    {
+      "slug": "quillbot",
+      "name": "QuillBot AI Detector",
+      "vendor": "QuillBot (Learneo)",
+      "url": "https://quillbot.com/ai-content-detector",
+      "access": "manual",
+      "api": null,
+      "threshold": 50,
+      "granularity": "document",
+      "minWords": 80,
+      "plan": "Free web tool",
+      "notes": "No public API. Collected through the manual path: two operators paste each sample into the web UI independently and both readings are recorded; disagreements above 10 points are re-read a third time."
+    },
+    {
+      "slug": "scribbr",
+      "name": "Scribbr AI Detector",
+      "vendor": "Scribbr (Learneo)",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "access": "manual",
+      "api": null,
+      "threshold": 50,
+      "granularity": "sentence",
+      "minWords": 80,
+      "plan": "Premium web tool",
+      "notes": "No public API; manual path as above. Shares vendor ownership with QuillBot but is scored separately because the products expose different models and thresholds."
+    },
+    {
+      "slug": "brandwell",
+      "name": "BrandWell AI Detector",
+      "vendor": "BrandWell (formerly Content at Scale)",
+      "url": "https://brandwell.ai/ai-content-detector/",
+      "access": "manual",
+      "api": null,
+      "threshold": 50,
+      "granularity": "sentence",
+      "minWords": 50,
+      "plan": "Free web tool",
+      "notes": "No public API; manual path as above."
+    },
+    {
+      "slug": "pangram",
+      "name": "Pangram",
+      "vendor": "Pangram Labs",
+      "url": "https://www.pangram.com/",
+      "access": "api",
+      "api": {
+        "endpoint": "https://api.pangram.com/v1/predict",
+        "method": "POST",
+        "auth": "header",
+        "authHeader": "x-api-key",
+        "keyEnv": "PANGRAM_API_KEY",
+        "bodyTemplate": {
+          "text": "{{TEXT}}"
+        },
+        "scorePath": "fraction_ai",
+        "scoreScale": "ai-0-1"
+      },
+      "threshold": 50,
+      "granularity": "sentence",
+      "minWords": 50,
+      "plan": "API",
+      "notes": "Excluded at the maintainer's request when this benchmark was scoped, then included after the maintainer supplied a full 2026-08 run log for it. Both facts are recorded here rather than only the second."
+    }
+  ],
+  "excluded": [
+    {
+      "name": "Turnitin AI Writing Detection",
+      "reason": "Sold only to institutions and unavailable for independent purchase. A benchmark nobody outside a licensed institution can reproduce is not a benchmark, so it is excluded rather than estimated."
+    },
+    {
+      "name": "Grammarly AI detection",
+      "reason": "Ships as an authorship-provenance signal bundled into the editor rather than a standalone detector with a comparable AI-probability output. Revisit if a scored API is published."
+    }
+  ]
+}

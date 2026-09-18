@@ -1,0 +1,1206 @@
+[
+  {
+    "id": "C001",
+    "class": "ai",
+    "domain": "academic",
+    "aiFraction": 1,
+    "words": 595,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "GPT-4o, temp 0.7, 2026-07-18 session",
+      "created": "2026-07-18",
+      "textId": "C001"
+    }
+  },
+  {
+    "id": "C002",
+    "class": "ai",
+    "domain": "academic",
+    "aiFraction": 1,
+    "words": 834,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Claude 4 Sonnet, default settings",
+      "created": "2026-07-22",
+      "textId": "C002"
+    }
+  },
+  {
+    "id": "C003",
+    "class": "ai",
+    "domain": "academic",
+    "aiFraction": 1,
+    "words": 583,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Gemini 2.0 Flash, long-form setting",
+      "created": "2026-07-25",
+      "textId": "C003"
+    }
+  },
+  {
+    "id": "C004",
+    "class": "ai",
+    "domain": "academic",
+    "aiFraction": 1,
+    "words": 899,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Llama 3.3 70B via Together endpoint",
+      "created": "2026-07-27",
+      "textId": "C004"
+    }
+  },
+  {
+    "id": "C005",
+    "class": "ai",
+    "domain": "news",
+    "aiFraction": 1,
+    "words": 521,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "GPT-4o, news desk prompt",
+      "created": "2026-07-30",
+      "textId": "C005"
+    }
+  },
+  {
+    "id": "C006",
+    "class": "ai",
+    "domain": "news",
+    "aiFraction": 1,
+    "words": 812,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Claude 4 Sonnet, wire-style prompt",
+      "created": "2026-08-01",
+      "textId": "C006"
+    }
+  },
+  {
+    "id": "C007",
+    "class": "ai",
+    "domain": "news",
+    "aiFraction": 1,
+    "words": 646,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Gemini 2.0 Flash, rewrite-as-AP",
+      "created": "2026-08-04",
+      "textId": "C007"
+    }
+  },
+  {
+    "id": "C008",
+    "class": "ai",
+    "domain": "news",
+    "aiFraction": 1,
+    "words": 909,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Llama 3.3 70B, news brief prompt",
+      "created": "2026-08-06",
+      "textId": "C008"
+    }
+  },
+  {
+    "id": "C009",
+    "class": "ai",
+    "domain": "blog",
+    "aiFraction": 1,
+    "words": 716,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "GPT-4o, first-person blog prompt",
+      "created": "2026-08-07",
+      "textId": "C009"
+    }
+  },
+  {
+    "id": "C010",
+    "class": "ai",
+    "domain": "blog",
+    "aiFraction": 1,
+    "words": 443,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Claude 4 Sonnet, opinion column prompt",
+      "created": "2026-08-09",
+      "textId": "C010"
+    }
+  },
+  {
+    "id": "C011",
+    "class": "ai",
+    "domain": "blog",
+    "aiFraction": 1,
+    "words": 985,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Gemini 2.0 Flash, Substack-style prompt",
+      "created": "2026-08-10",
+      "textId": "C011"
+    }
+  },
+  {
+    "id": "C012",
+    "class": "ai",
+    "domain": "blog",
+    "aiFraction": 1,
+    "words": 746,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Llama 3.3 70B, personal essay prompt",
+      "created": "2026-08-12",
+      "textId": "C012"
+    }
+  },
+  {
+    "id": "C013",
+    "class": "ai",
+    "domain": "fiction",
+    "aiFraction": 1,
+    "words": 967,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "GPT-4o, short-story prompt",
+      "created": "2026-08-13",
+      "textId": "C013"
+    }
+  },
+  {
+    "id": "C014",
+    "class": "ai",
+    "domain": "fiction",
+    "aiFraction": 1,
+    "words": 797,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Claude 4 Sonnet, literary short story",
+      "created": "2026-08-14",
+      "textId": "C014"
+    }
+  },
+  {
+    "id": "C015",
+    "class": "ai",
+    "domain": "fiction",
+    "aiFraction": 1,
+    "words": 944,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Gemini 2.0 Flash, scene-only prompt",
+      "created": "2026-08-15",
+      "textId": "C015"
+    }
+  },
+  {
+    "id": "C016",
+    "class": "ai",
+    "domain": "fiction",
+    "aiFraction": 1,
+    "words": 800,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Llama 3.3 70B, third-person fiction",
+      "created": "2026-08-17",
+      "textId": "C016"
+    }
+  },
+  {
+    "id": "C017",
+    "class": "ai",
+    "domain": "business",
+    "aiFraction": 1,
+    "words": 644,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "GPT-4o, client memo prompt",
+      "created": "2026-08-18",
+      "textId": "C017"
+    }
+  },
+  {
+    "id": "C018",
+    "class": "ai",
+    "domain": "business",
+    "aiFraction": 1,
+    "words": 954,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Claude 4 Sonnet, board update prompt",
+      "created": "2026-08-19",
+      "textId": "C018"
+    }
+  },
+  {
+    "id": "C019",
+    "class": "ai",
+    "domain": "business",
+    "aiFraction": 1,
+    "words": 631,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Gemini 2.0 Flash, policy brief prompt",
+      "created": "2026-08-21",
+      "textId": "C019"
+    }
+  },
+  {
+    "id": "C020",
+    "class": "ai",
+    "domain": "business",
+    "aiFraction": 1,
+    "words": 766,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Llama 3.3 70B, vendor letter prompt",
+      "created": "2026-08-22",
+      "textId": "C020"
+    }
+  },
+  {
+    "id": "C021",
+    "class": "ai",
+    "domain": "marketing",
+    "aiFraction": 1,
+    "words": 502,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "GPT-4o, landing-page prompt",
+      "created": "2026-07-19",
+      "textId": "C021"
+    }
+  },
+  {
+    "id": "C022",
+    "class": "ai",
+    "domain": "marketing",
+    "aiFraction": 1,
+    "words": 651,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Claude 4 Sonnet, product page prompt",
+      "created": "2026-07-23",
+      "textId": "C022"
+    }
+  },
+  {
+    "id": "C023",
+    "class": "ai",
+    "domain": "marketing",
+    "aiFraction": 1,
+    "words": 894,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Gemini 2.0 Flash, email campaign prompt",
+      "created": "2026-07-28",
+      "textId": "C023"
+    }
+  },
+  {
+    "id": "C024",
+    "class": "ai",
+    "domain": "marketing",
+    "aiFraction": 1,
+    "words": 888,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Llama 3.3 70B, catalog blurb prompt",
+      "created": "2026-08-02",
+      "textId": "C024"
+    }
+  },
+  {
+    "id": "C025",
+    "class": "ai",
+    "domain": "technical",
+    "aiFraction": 1,
+    "words": 806,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "GPT-4o, install-guide prompt",
+      "created": "2026-08-05",
+      "textId": "C025"
+    }
+  },
+  {
+    "id": "C026",
+    "class": "ai",
+    "domain": "technical",
+    "aiFraction": 1,
+    "words": 561,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Claude 4 Sonnet, troubleshooting prompt",
+      "created": "2026-08-08",
+      "textId": "C026"
+    }
+  },
+  {
+    "id": "C027",
+    "class": "ai",
+    "domain": "technical",
+    "aiFraction": 1,
+    "words": 765,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Gemini 2.0 Flash, CLI how-to prompt",
+      "created": "2026-08-11",
+      "textId": "C027"
+    }
+  },
+  {
+    "id": "C028",
+    "class": "ai",
+    "domain": "technical",
+    "aiFraction": 1,
+    "words": 629,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Llama 3.3 70B, configuration guide",
+      "created": "2026-08-16",
+      "textId": "C028"
+    }
+  },
+  {
+    "id": "C029",
+    "class": "human",
+    "domain": "academic",
+    "aiFraction": 0,
+    "words": 850,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "William James, 'The Moral Equivalent of War,' McClure's Magazine",
+      "created": "1910-08-01",
+      "textId": "C029"
+    }
+  },
+  {
+    "id": "C030",
+    "class": "human",
+    "domain": "academic",
+    "aiFraction": 0,
+    "words": 653,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "John Dewey, Democracy and Education, ch. 7 (Macmillan)",
+      "created": "1916-01-01",
+      "textId": "C030"
+    }
+  },
+  {
+    "id": "C031",
+    "class": "human",
+    "domain": "academic",
+    "aiFraction": 0,
+    "words": 730,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Jane Addams, Peace and Bread in Time of War, ch. 3",
+      "created": "1922-03-15",
+      "textId": "C031"
+    }
+  },
+  {
+    "id": "C032",
+    "class": "human",
+    "domain": "news",
+    "aiFraction": 0,
+    "words": 569,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Sarah Kliff, Vox feature on emergency-room billing",
+      "created": "2018-02-14",
+      "textId": "C032"
+    }
+  },
+  {
+    "id": "C033",
+    "class": "human",
+    "domain": "news",
+    "aiFraction": 0,
+    "words": 669,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Andrew Higgins, New York Times foreign desk",
+      "created": "2018-06-09",
+      "textId": "C033"
+    }
+  },
+  {
+    "id": "C034",
+    "class": "human",
+    "domain": "news",
+    "aiFraction": 0,
+    "words": 557,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Reuters special report, California wildfire season",
+      "created": "2018-11-27",
+      "textId": "C034"
+    }
+  },
+  {
+    "id": "C035",
+    "class": "human",
+    "domain": "blog",
+    "aiFraction": 0,
+    "words": 702,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Paul Ford, 'What Is Code?', Bloomberg Businessweek",
+      "created": "2015-06-11",
+      "textId": "C035"
+    }
+  },
+  {
+    "id": "C036",
+    "class": "human",
+    "domain": "blog",
+    "aiFraction": 0,
+    "words": 854,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Heather Havrilesky, Ask Polly column, The Cut",
+      "created": "2019-03-06",
+      "textId": "C036"
+    }
+  },
+  {
+    "id": "C037",
+    "class": "human",
+    "domain": "blog",
+    "aiFraction": 0,
+    "words": 609,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Tim Carmody, kottke.org weekday post",
+      "created": "2019-09-18",
+      "textId": "C037"
+    }
+  },
+  {
+    "id": "C038",
+    "class": "human",
+    "domain": "fiction",
+    "aiFraction": 0,
+    "words": 596,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Willa Cather, My Ántonia, Book I, ch. 2 (Houghton Mifflin)",
+      "created": "1918-09-21",
+      "textId": "C038"
+    }
+  },
+  {
+    "id": "C039",
+    "class": "human",
+    "domain": "fiction",
+    "aiFraction": 0,
+    "words": 733,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Ursula K. Le Guin, 'The Ones Who Walk Away from Omelas,' 1973 reprint",
+      "created": "1973-10-01",
+      "textId": "C039"
+    }
+  },
+  {
+    "id": "C040",
+    "class": "human",
+    "domain": "fiction",
+    "aiFraction": 0,
+    "words": 405,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "George Saunders, Tenth of December title story (Random House)",
+      "created": "2013-01-08",
+      "textId": "C040"
+    }
+  },
+  {
+    "id": "C041",
+    "class": "human",
+    "domain": "business",
+    "aiFraction": 0,
+    "words": 521,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Internal strategy memo, Midland Credit Union board packet",
+      "created": "2016-02-17",
+      "textId": "C041"
+    }
+  },
+  {
+    "id": "C042",
+    "class": "human",
+    "domain": "business",
+    "aiFraction": 0,
+    "words": 556,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "All-staff note, Harborview Medical Center operations",
+      "created": "2016-09-02",
+      "textId": "C042"
+    }
+  },
+  {
+    "id": "C043",
+    "class": "human",
+    "domain": "business",
+    "aiFraction": 0,
+    "words": 777,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Client closeout letter, Pratt & Keene LLP",
+      "created": "2016-12-08",
+      "textId": "C043"
+    }
+  },
+  {
+    "id": "C044",
+    "class": "human",
+    "domain": "marketing",
+    "aiFraction": 0,
+    "words": 569,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Fall 2017 print catalog, Schoolhouse Electric",
+      "created": "2017-08-22",
+      "textId": "C044"
+    }
+  },
+  {
+    "id": "C045",
+    "class": "human",
+    "domain": "marketing",
+    "aiFraction": 0,
+    "words": 601,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Spring lookbook copy, Patagonia Worn Wear",
+      "created": "2017-03-14",
+      "textId": "C045"
+    }
+  },
+  {
+    "id": "C046",
+    "class": "human",
+    "domain": "marketing",
+    "aiFraction": 0,
+    "words": 363,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Holiday insert, Powell's Books in-store flyer",
+      "created": "2017-11-09",
+      "textId": "C046"
+    }
+  },
+  {
+    "id": "C047",
+    "class": "human",
+    "domain": "technical",
+    "aiFraction": 0,
+    "words": 462,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "PostgreSQL 9.4 documentation, 'Concurrency Control'",
+      "created": "2014-12-18",
+      "textId": "C047"
+    }
+  },
+  {
+    "id": "C048",
+    "class": "human",
+    "domain": "technical",
+    "aiFraction": 0,
+    "words": 449,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Apple Technical Note TN2277 excerpt, developer library snapshot",
+      "created": "2015-05-04",
+      "textId": "C048"
+    }
+  },
+  {
+    "id": "C049",
+    "class": "human",
+    "domain": "technical",
+    "aiFraction": 0,
+    "words": 565,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "AWS Elastic Beanstalk Developer Guide, 'Deploying a Flask app,' archived HTML",
+      "created": "2015-10-29",
+      "textId": "C049"
+    }
+  },
+  {
+    "id": "C050",
+    "class": "hybrid",
+    "domain": "academic",
+    "aiFraction": 0.25,
+    "words": 901,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "1911 Britannica agriculture article + GPT-4o replacements (25% by words)",
+      "created": "2026-08-12",
+      "textId": "C050"
+    }
+  },
+  {
+    "id": "C051",
+    "class": "hybrid",
+    "domain": "academic",
+    "aiFraction": 0.5,
+    "words": 799,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2014 faculty senate minutes + Claude 4 Sonnet replacements (50%)",
+      "created": "2026-08-13",
+      "textId": "C051"
+    }
+  },
+  {
+    "id": "C052",
+    "class": "hybrid",
+    "domain": "academic",
+    "aiFraction": 0.75,
+    "words": 501,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2016 tenure statement + Gemini 2.0 Flash replacements (75%)",
+      "created": "2026-08-14",
+      "textId": "C052"
+    }
+  },
+  {
+    "id": "C053",
+    "class": "hybrid",
+    "domain": "news",
+    "aiFraction": 0.25,
+    "words": 757,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2018 local news brief + Llama 3.3 70B replacements (25%)",
+      "created": "2026-08-15",
+      "textId": "C053"
+    }
+  },
+  {
+    "id": "C054",
+    "class": "hybrid",
+    "domain": "news",
+    "aiFraction": 0.5,
+    "words": 723,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2019 city-council recap + GPT-4o replacements (50%)",
+      "created": "2026-08-16",
+      "textId": "C054"
+    }
+  },
+  {
+    "id": "C055",
+    "class": "hybrid",
+    "domain": "news",
+    "aiFraction": 0.75,
+    "words": 721,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2017 wire story + Claude 4 Sonnet replacements (75%)",
+      "created": "2026-08-17",
+      "textId": "C055"
+    }
+  },
+  {
+    "id": "C056",
+    "class": "hybrid",
+    "domain": "blog",
+    "aiFraction": 0.25,
+    "words": 786,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2015 personal blog post + Gemini 2.0 Flash replacements (25%)",
+      "created": "2026-08-18",
+      "textId": "C056"
+    }
+  },
+  {
+    "id": "C057",
+    "class": "hybrid",
+    "domain": "blog",
+    "aiFraction": 0.5,
+    "words": 508,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2019 newsletter essay + Llama 3.3 70B replacements (50%)",
+      "created": "2026-08-19",
+      "textId": "C057"
+    }
+  },
+  {
+    "id": "C058",
+    "class": "hybrid",
+    "domain": "blog",
+    "aiFraction": 0.75,
+    "words": 841,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2014 LiveJournal entry + GPT-4o replacements (75%)",
+      "created": "2026-08-20",
+      "textId": "C058"
+    }
+  },
+  {
+    "id": "C059",
+    "class": "hybrid",
+    "domain": "fiction",
+    "aiFraction": 0.25,
+    "words": 628,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2013 short-story draft + Claude 4 Sonnet replacements (25%)",
+      "created": "2026-08-21",
+      "textId": "C059"
+    }
+  },
+  {
+    "id": "C060",
+    "class": "hybrid",
+    "domain": "fiction",
+    "aiFraction": 0.5,
+    "words": 572,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2011 workshop story + Gemini 2.0 Flash replacements (50%)",
+      "created": "2026-08-22",
+      "textId": "C060"
+    }
+  },
+  {
+    "id": "C061",
+    "class": "hybrid",
+    "domain": "fiction",
+    "aiFraction": 0.75,
+    "words": 515,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2018 contest entry + Llama 3.3 70B replacements (75%)",
+      "created": "2026-08-23",
+      "textId": "C061"
+    }
+  },
+  {
+    "id": "C062",
+    "class": "hybrid",
+    "domain": "business",
+    "aiFraction": 0.25,
+    "words": 676,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2016 quarterly letter + GPT-4o replacements (25%)",
+      "created": "2026-08-12",
+      "textId": "C062"
+    }
+  },
+  {
+    "id": "C063",
+    "class": "hybrid",
+    "domain": "business",
+    "aiFraction": 0.5,
+    "words": 462,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2015 offer-summary memo + Claude 4 Sonnet replacements (50%)",
+      "created": "2026-08-15",
+      "textId": "C063"
+    }
+  },
+  {
+    "id": "C064",
+    "class": "hybrid",
+    "domain": "business",
+    "aiFraction": 0.75,
+    "words": 802,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2017 vendor RFP response + Gemini 2.0 Flash replacements (75%)",
+      "created": "2026-08-18",
+      "textId": "C064"
+    }
+  },
+  {
+    "id": "C065",
+    "class": "hybrid",
+    "domain": "marketing",
+    "aiFraction": 0.25,
+    "words": 564,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2014 product insert + Llama 3.3 70B replacements (25%)",
+      "created": "2026-08-13",
+      "textId": "C065"
+    }
+  },
+  {
+    "id": "C066",
+    "class": "hybrid",
+    "domain": "marketing",
+    "aiFraction": 0.5,
+    "words": 808,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2018 homepage draft + GPT-4o replacements (50%)",
+      "created": "2026-08-16",
+      "textId": "C066"
+    }
+  },
+  {
+    "id": "C067",
+    "class": "hybrid",
+    "domain": "marketing",
+    "aiFraction": 0.75,
+    "words": 648,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2019 promo email + Claude 4 Sonnet replacements (75%)",
+      "created": "2026-08-19",
+      "textId": "C067"
+    }
+  },
+  {
+    "id": "C068",
+    "class": "hybrid",
+    "domain": "technical",
+    "aiFraction": 0.25,
+    "words": 790,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2015 man-page rewrite + Gemini 2.0 Flash replacements (25%)",
+      "created": "2026-08-14",
+      "textId": "C068"
+    }
+  },
+  {
+    "id": "C069",
+    "class": "hybrid",
+    "domain": "technical",
+    "aiFraction": 0.5,
+    "words": 887,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2012 README + Llama 3.3 70B replacements (50%)",
+      "created": "2026-08-17",
+      "textId": "C069"
+    }
+  },
+  {
+    "id": "C070",
+    "class": "hybrid",
+    "domain": "technical",
+    "aiFraction": 0.75,
+    "words": 762,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "2017 runbook + GPT-4o replacements (75%)",
+      "created": "2026-08-20",
+      "textId": "C070"
+    }
+  },
+  {
+    "id": "C071",
+    "class": "fp",
+    "domain": "academic",
+    "profile": "esl-nonnative",
+    "aiFraction": 0,
+    "words": 524,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Placement essay, University of Helsinki English exam booklet",
+      "created": "2018-04-12",
+      "textId": "C071"
+    }
+  },
+  {
+    "id": "C072",
+    "class": "fp",
+    "domain": "academic",
+    "profile": "esl-nonnative",
+    "aiFraction": 0,
+    "words": 471,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "TOEFL-style independent essay, collected with writer consent, Osaka",
+      "created": "2016-11-03",
+      "textId": "C072"
+    }
+  },
+  {
+    "id": "C073",
+    "class": "fp",
+    "domain": "academic",
+    "profile": "esl-nonnative",
+    "aiFraction": 0,
+    "words": 478,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Erasmus application statement, University of Coimbra",
+      "created": "2019-01-22",
+      "textId": "C073"
+    }
+  },
+  {
+    "id": "C074",
+    "class": "fp",
+    "domain": "news",
+    "profile": "translated",
+    "aiFraction": 0,
+    "words": 693,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "English translation of El País report on rail strikes, translator-signed",
+      "created": "2017-05-16",
+      "textId": "C074"
+    }
+  },
+  {
+    "id": "C075",
+    "class": "fp",
+    "domain": "news",
+    "profile": "translated",
+    "aiFraction": 0,
+    "words": 444,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "English translation of Asahi Shimbun local-government piece",
+      "created": "2014-09-08",
+      "textId": "C075"
+    }
+  },
+  {
+    "id": "C076",
+    "class": "fp",
+    "domain": "news",
+    "profile": "translated",
+    "aiFraction": 0,
+    "words": 587,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "English translation of Le Monde diplomatique short feature",
+      "created": "2019-02-27",
+      "textId": "C076"
+    }
+  },
+  {
+    "id": "C077",
+    "class": "fp",
+    "domain": "blog",
+    "profile": "template-structured",
+    "aiFraction": 0,
+    "words": 555,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Boilerplate 'about us' page, county parks department CMS",
+      "created": "2013-06-21",
+      "textId": "C077"
+    }
+  },
+  {
+    "id": "C078",
+    "class": "fp",
+    "domain": "blog",
+    "profile": "template-structured",
+    "aiFraction": 0,
+    "words": 234,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "HR welcome email template, regional hospital system",
+      "created": "2018-08-04",
+      "textId": "C078"
+    }
+  },
+  {
+    "id": "C079",
+    "class": "fp",
+    "domain": "blog",
+    "profile": "template-structured",
+    "aiFraction": 0,
+    "words": 322,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Grant-report narrative template, state arts board",
+      "created": "2011-10-19",
+      "textId": "C079"
+    }
+  },
+  {
+    "id": "C080",
+    "class": "fp",
+    "domain": "technical",
+    "profile": "technical-formulaic",
+    "aiFraction": 0,
+    "words": 360,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "IEEE 802.11-2012 clause excerpt, licensed reprint",
+      "created": "2012-03-29",
+      "textId": "C080"
+    }
+  },
+  {
+    "id": "C081",
+    "class": "fp",
+    "domain": "technical",
+    "profile": "technical-formulaic",
+    "aiFraction": 0,
+    "words": 438,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "FDA 2016 guidance excerpt, 'Human Factors Studies'",
+      "created": "2016-02-03",
+      "textId": "C081"
+    }
+  },
+  {
+    "id": "C082",
+    "class": "fp",
+    "domain": "technical",
+    "profile": "technical-formulaic",
+    "aiFraction": 0,
+    "words": 562,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "NIST SP 800-63-3 section 5 prose (public domain U.S. government)",
+      "created": "2017-06-22",
+      "textId": "C082"
+    }
+  },
+  {
+    "id": "C083",
+    "class": "fp",
+    "domain": "business",
+    "profile": "grammar-corrected",
+    "aiFraction": 0,
+    "words": 701,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Commercial lease, Article 12 indemnity clause, Cook County filing",
+      "created": "2015-07-30",
+      "textId": "C083"
+    }
+  },
+  {
+    "id": "C084",
+    "class": "fp",
+    "domain": "business",
+    "profile": "grammar-corrected",
+    "aiFraction": 0,
+    "words": 573,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Appellate brief statement of facts, 7th Cir. public docket",
+      "created": "2018-01-11",
+      "textId": "C084"
+    }
+  },
+  {
+    "id": "C085",
+    "class": "fp",
+    "domain": "business",
+    "profile": "grammar-corrected",
+    "aiFraction": 0,
+    "words": 551,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Insurance policy definitions section, ISO HO-3 2011",
+      "created": "2011-09-01",
+      "textId": "C085"
+    }
+  },
+  {
+    "id": "C086",
+    "class": "fp",
+    "domain": "marketing",
+    "profile": "short-form",
+    "aiFraction": 0,
+    "words": 114,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Craigslist missed-connections post, San Francisco",
+      "created": "2014-05-19",
+      "textId": "C086"
+    }
+  },
+  {
+    "id": "C087",
+    "class": "fp",
+    "domain": "marketing",
+    "profile": "short-form",
+    "aiFraction": 0,
+    "words": 60,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Product caption, Etsy listing (shop since closed)",
+      "created": "2017-02-14",
+      "textId": "C087"
+    }
+  },
+  {
+    "id": "C088",
+    "class": "fp",
+    "domain": "marketing",
+    "profile": "short-form",
+    "aiFraction": 0,
+    "words": 129,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Museum wall label, Cleveland Museum of Art collection notes",
+      "created": "2019-08-30",
+      "textId": "C088"
+    }
+  },
+  {
+    "id": "C089",
+    "class": "fp",
+    "domain": "academic",
+    "profile": "archival-formal",
+    "aiFraction": 0,
+    "words": 515,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Thomas Carlyle, Past and Present, Book III, ch. 4",
+      "created": "1843-04-01",
+      "textId": "C089"
+    }
+  },
+  {
+    "id": "C090",
+    "class": "fp",
+    "domain": "academic",
+    "profile": "archival-formal",
+    "aiFraction": 0,
+    "words": 531,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "John Ruskin, The Stones of Venice, vol. 2, ch. 6",
+      "created": "1853-07-01",
+      "textId": "C090"
+    }
+  },
+  {
+    "id": "C091",
+    "class": "fp",
+    "domain": "academic",
+    "profile": "archival-formal",
+    "aiFraction": 0,
+    "words": 397,
+    "sha256": "not-supplied",
+    "origin": {
+      "source": "Letter of Abigail Adams to John Adams, Massachusetts Historical Society transcription",
+      "created": "1776-03-31",
+      "textId": "C091"
+    }
+  }
+]

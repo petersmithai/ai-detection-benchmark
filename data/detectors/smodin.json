@@ -1,0 +1,8 @@
+{
+  "slug": "smodin",
+  "name": "Smodin AI Content Detector",
+  "vendor": "Smodin",
+  "url": "https://smodin.io/ai-content-detector",
+  "note": "Per-cycle history. Populated by npm run score once a cycle is published; a synthetic cycle never writes here.",
+  "cycles": []
+}

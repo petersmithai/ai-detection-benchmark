@@ -1,0 +1,8 @@
+{
+  "slug": "sapling",
+  "name": "Sapling AI Detector",
+  "vendor": "Sapling",
+  "url": "https://sapling.ai/ai-content-detector",
+  "note": "Per-cycle history. Populated by npm run score once a cycle is published; a synthetic cycle never writes here.",
+  "cycles": []
+}

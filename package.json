@@ -1,0 +1,29 @@
+{
+  "name": "ai-detection-benchmark",
+  "version": "1.0.0",
+  "description": "An independent, reproducible benchmark for AI content detectors across AI, human, hybrid and false-positive-stress text.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build-corpus": "tsx scripts/build-corpus.ts",
+    "generate-ai": "tsx scripts/generate-ai-corpus.ts",
+    "run-detectors": "tsx scripts/run-detectors.ts",
+    "collection-sheet": "tsx scripts/collection-sheet.ts",
+    "ingest": "tsx scripts/ingest-runs.ts",
+    "import-manual": "tsx scripts/import-manual.ts",
+    "score": "tsx scripts/score.ts",
+    "verify": "tsx scripts/verify-cycle.ts",
+    "commit-cycle": "tsx scripts/commit-cycle.ts",
+    "smoke-test": "tsx scripts/dev/smoke-test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

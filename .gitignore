@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Fetched source texts are NOT redistributed by this repo — they are rebuilt
+# locally from datasets/*/manifest.json. Only hashes and spans are committed.
+# Cycle nonces, held privately between a cycle opening and its reveal.
+.cycle-secrets/
+
+# Scratch output of `npm run smoke-test`: fabricated input, never publishable.
+data/cycles/.smoke/
+
+datasets/.cache/
+datasets/**/texts/
+*.local.json
+.DS_Store

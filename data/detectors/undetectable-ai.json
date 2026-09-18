@@ -1,0 +1,8 @@
+{
+  "slug": "undetectable-ai",
+  "name": "Undetectable.ai Detector",
+  "vendor": "Undetectable.ai",
+  "url": "https://undetectable.ai/ai-detector",
+  "note": "Per-cycle history. Populated by npm run score once a cycle is published; a synthetic cycle never writes here.",
+  "cycles": []
+}

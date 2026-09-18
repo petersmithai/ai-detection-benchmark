@@ -1,0 +1,40 @@
+{
+  "cycle": "2026-08",
+  "status": "published",
+  "publishedAt": "2026-09-03",
+  "corpusProvenance": "operator-supplied",
+  "collection": {
+    "passes": 2,
+    "passDates": [
+      "2026-08-26",
+      "2026-08-28",
+      "(Pangram: 2026-08-27 and 2026-08-29)"
+    ],
+    "presentationOrder": "randomised per pass, recorded per row",
+    "detectorsMeasured": 5,
+    "rawLogs": "run-logs/*.csv \u2014 one row per text per pass, with the vendor's own score field, displayed label and raw response retained verbatim"
+  },
+  "note": "This cycle was collected against a corpus the operator assembled and scanned directly, so it does not use this repository's commit-reveal prompt scheme. The nonce, prompt-selection and prompt-replay checks do not apply and are skipped by verification; the manifest and score-replay checks apply as normal.",
+  "limitations": [
+    "The 91 source texts were not supplied with the run logs, so samples.json carries 'not-supplied' in place of a SHA-256 and nobody can independently confirm which documents were scanned.",
+    "Ground truth (class, genre, stress profile, AI word fraction, word count) is taken from the operator's logs and cross-checked for agreement across all five files; it is not independently verified.",
+    "Five of thirteen registered detectors were measured. The other eight are absent from the leaderboard rather than scored at zero."
+  ],
+  "supersession": {
+    "note": "Run logs for Winston AI, GPTZero, Copyleaks and Pangram were supplied twice. The first batch is retained in superseded/ and is NOT used. The second batch is scored here because it reproduces the maintainer's stated analysis exactly on every metric, and because all five second-batch logs agree with each other on the ground truth of all 91 texts.",
+    "originalityExcluded": "Originality.ai was measured in the first batch only and was not re-supplied. Mixing one batch-1 detector into a batch-2 leaderboard would compare tools on different readings, so it is omitted from this cycle.",
+    "resolved": {
+      "date": "2026-09-03",
+      "attestation": "The maintainer confirms the first batch was a faulty run and that the second batch is the record of what was scanned. Recorded as attestation: the two batches cannot be distinguished from the data alone, and this repository holds no evidence bearing on which is correct beyond the maintainer's statement.",
+      "batch1Retained": "superseded/ \u2014 kept so a reader can see both and judge for themselves."
+    }
+  },
+  "scoringVersion": "2.0.0",
+  "rescored": {
+    "date": "2026-09-03",
+    "from": "methodology/v1 (30/25/20/15/10)",
+    "to": "methodology/v2 (20/20/35/15/10)",
+    "note": "Weights were changed after this cycle had been scored and published under v1, not before it opened. The raw readings are untouched; only the weighting changed. Both tables are in CHANGES.md.",
+    "effect": "Winston AI 90.99 -> 91.70 and Copyleaks 91.73 -> 91.38, exchanging ranks 1 and 2. The two remain 0.32 points apart with overlapping confidence intervals and are not distinguishable under either weighting."
+  }
+}

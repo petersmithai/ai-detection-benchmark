@@ -1,0 +1,8 @@
+{
+  "slug": "scribbr",
+  "name": "Scribbr AI Detector",
+  "vendor": "Scribbr (Learneo)",
+  "url": "https://www.scribbr.com/ai-detector/",
+  "note": "Per-cycle history. Populated by npm run score once a cycle is published; a synthetic cycle never writes here.",
+  "cycles": []
+}

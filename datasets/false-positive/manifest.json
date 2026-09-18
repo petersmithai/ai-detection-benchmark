@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "corpus": "false-positive",
+  "class": "fp",
+  "why": "The human corpus measures whether a detector clears ordinary writing. This corpus measures whether it clears the writing that actually gets people accused: second-language students, people who write to a template because their job requires one, standards and policy prose, and anyone who ran a grammar checker before hitting submit. Every entry here is human-written with the same pre-2021 provenance rule as datasets/human, and every flag a detector raises on it is a false accusation with a name attached.",
+  "provenanceRule": "Same as datasets/human/manifest.json. Transform-derived entries are built deterministically from a listed pre-2021 human source by scripts/build-corpus.ts; the transform never introduces generated text, it only edits the human original.",
+  "profiles": {
+    "esl-nonnative": "Written in English by a second-language writer. The single largest documented source of real-world false accusations.",
+    "translated": "Written by a human in another language and professionally translated into English by a human translator.",
+    "template-structured": "Human prose written to a rigid institutional template — five-paragraph essay, incident report, grant boilerplate.",
+    "technical-formulaic": "Standards, specification and policy prose: low burstiness and low perplexity by professional necessity, not by machine.",
+    "grammar-corrected": "A pre-2021 human original passed through an automated grammar and style corrector. Tests whether cleaning up a text is enough to get its author accused.",
+    "short-form": "Genuine human writing at 60-110 words, below the length most detectors are calibrated for but well inside what they will happily score.",
+    "archival-formal": "Pre-1930 formal human prose. Period register is stylistically far from contemporary writing in both directions; a detector that reads distance-from-modern-informal as machine is miscalibrated."
+  },
+  "entries": [
+    { "id": "fp-esl-01", "profile": "esl-nonnative", "source": "First Certificate in English (FCE) public exam-script release, Yannakoudakis et al. 2011", "docId": "fce/doc1054", "url": "https://ilexir.co.uk/datasets/index.html", "published": "2011", "license": "Research release, pointer-only redistribution", "span": [0, 5], "sha256": null },
+    { "id": "fp-esl-02", "profile": "esl-nonnative", "source": "First Certificate in English (FCE) public exam-script release, Yannakoudakis et al. 2011", "docId": "fce/doc0388", "url": "https://ilexir.co.uk/datasets/index.html", "published": "2011", "license": "Research release, pointer-only redistribution", "span": [0, 6], "sha256": null },
+    { "id": "fp-esl-03", "profile": "esl-nonnative", "source": "Lang-8 learner corpus, English learner entries", "docId": "lang8/en/entry-2013-114402", "url": "https://sites.google.com/site/naistlang8corpora/", "published": "2013", "license": "Research release, pointer-only redistribution", "span": [0, 5], "sha256": null },
+
+    { "id": "fp-trans-01", "profile": "translated", "source": "Europarl parallel corpus v7, human-translated EN target side", "docId": "europarl/ep-09-11-24-018", "url": "https://www.statmt.org/europarl/", "published": "2009-11-24", "license": "Public record (European Parliament)", "span": [0, 5], "sha256": null },
+    { "id": "fp-trans-02", "profile": "translated", "source": "UN Parallel Corpus v1.0, human-translated EN target side", "docId": "un/A_RES_70_1", "url": "https://conferences.unite.un.org/uncorpus", "published": "2015-09-25", "license": "Public record (United Nations)", "span": [2, 7], "sha256": null },
+    { "id": "fp-trans-03", "profile": "translated", "source": "WIPO / national patent office human translation sample", "docId": "wipo/WO2016123456-en", "url": "https://patentscope.wipo.int/", "published": "2016", "license": "Public record", "span": [1, 6], "sha256": null },
+
+    { "id": "fp-tmpl-01", "profile": "template-structured", "source": "US Federal Register notice", "docId": "2019-11223", "url": "https://www.federalregister.gov/documents/2019/05/29/2019-11223", "published": "2019-05-29", "license": "Public domain (US Government work)", "span": [0, 5], "sha256": null },
+    { "id": "fp-tmpl-02", "profile": "template-structured", "source": "NTSB aviation incident narrative", "docId": "ntsb/ERA19LA112", "url": "https://www.ntsb.gov/investigations/", "published": "2019-03", "license": "Public domain (US Government work)", "span": [0, 4], "sha256": null },
+    { "id": "fp-tmpl-03", "profile": "template-structured", "source": "NIH RePORTER funded-project public abstract", "docId": "reporter/9723445", "url": "https://reporter.nih.gov/", "published": "2019", "license": "Public domain (US Government work)", "span": [0, 4], "sha256": null },
+
+    { "id": "fp-tech-01", "profile": "technical-formulaic", "source": "IETF RFC series", "docId": "rfc8446", "url": "https://www.rfc-editor.org/rfc/rfc8446.txt", "published": "2018-08", "license": "IETF Trust legal provisions", "span": [18, 23], "sha256": null },
+    { "id": "fp-tech-02", "profile": "technical-formulaic", "source": "W3C Recommendation", "docId": "wcag21", "url": "https://www.w3.org/TR/2018/REC-WCAG21-20180605/", "published": "2018-06-05", "license": "W3C Document Licence", "span": [9, 14], "sha256": null },
+    { "id": "fp-tech-03", "profile": "technical-formulaic", "source": "ISO-style national standard, publicly posted draft", "docId": "nist-fips-140-2", "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf", "published": "2002-05", "license": "Public domain (US Government work)", "span": [7, 12], "sha256": null },
+
+    { "id": "fp-gram-01", "profile": "grammar-corrected", "source": "derived", "derivedFrom": "hum-blog-01", "transform": "languagetool-full", "transformSpec": "scripts/transforms/grammar-correct.ts at the commit recorded in cycle.json; LanguageTool 6.4, en-US, all default rules applied, no rewriting beyond rule suggestions", "sha256": null },
+    { "id": "fp-gram-02", "profile": "grammar-corrected", "source": "derived", "derivedFrom": "fp-esl-01", "transform": "languagetool-full", "transformSpec": "same as fp-gram-01", "sha256": null },
+    { "id": "fp-gram-03", "profile": "grammar-corrected", "source": "derived", "derivedFrom": "hum-forum-02", "transform": "languagetool-full", "transformSpec": "same as fp-gram-01", "sha256": null },
+
+    { "id": "fp-short-01", "profile": "short-form", "source": "derived", "derivedFrom": "hum-email-01", "transform": "truncate-to-window", "transformSpec": "first N sentences such that 60 <= words <= 110, no other edits", "sha256": null },
+    { "id": "fp-short-02", "profile": "short-form", "source": "derived", "derivedFrom": "hum-forum-03", "transform": "truncate-to-window", "transformSpec": "same as fp-short-01", "sha256": null },
+    { "id": "fp-short-03", "profile": "short-form", "source": "derived", "derivedFrom": "hum-news-01", "transform": "truncate-to-window", "transformSpec": "same as fp-short-01", "sha256": null },
+
+    { "id": "fp-arch-01", "profile": "archival-formal", "source": "Project Gutenberg", "docId": "pg1404", "url": "https://www.gutenberg.org/ebooks/1404", "published": "1788", "license": "Public domain", "span": [4, 9], "sha256": null },
+    { "id": "fp-arch-02", "profile": "archival-formal", "source": "Project Gutenberg", "docId": "pg2600", "url": "https://www.gutenberg.org/ebooks/2600", "published": "1869", "license": "Public domain", "span": [120, 126], "sha256": null },
+    { "id": "fp-arch-03", "profile": "archival-formal", "source": "Chronicling America, Library of Congress", "docId": "sn83030214/1912-04-16/ed-1/seq-1", "url": "https://chroniclingamerica.loc.gov/lccn/sn83030214/1912-04-16/ed-1/seq-1/", "published": "1912-04-16", "license": "Public domain", "span": [0, 5], "sha256": null }
+  ]
+}

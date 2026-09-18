@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "corpus": "ai",
+  "class": "ai",
+  "promptPolicy": "Prompts are written the way an ordinary user writes them. No template contains an instruction to sound human, avoid detection, vary sentence length, or lower perplexity. Adversarial and humanizer-processed text is a separate corpus and is out of scope for this cycle — the question here is whether a detector catches AI text that nobody tried to hide.",
+  "resolution": "Placeholders are resolved by data/cycles/<cycle>/select-placeholders.js from the cycle nonce, which is committed as a SHA-256 hash before any prompt is generated and revealed at cycle close. See docs/VERIFICATION.md.",
+  "variantsPerTemplate": 4,
+  "targetWords": [180, 320],
+  "templates": [
+    {
+      "id": "tpl-academic",
+      "domain": "academic",
+      "slots": ["FIELD", "TOPIC_ACADEMIC", "LEVEL"],
+      "text": "Write the introduction section of a {{LEVEL}} {{FIELD}} essay on {{TOPIC_ACADEMIC}}. About 250 words."
+    },
+    {
+      "id": "tpl-blog",
+      "domain": "blog",
+      "slots": ["TOPIC_BLOG", "AUDIENCE"],
+      "text": "Write a blog post for {{AUDIENCE}} about {{TOPIC_BLOG}}. Around 250 words."
+    },
+    {
+      "id": "tpl-email",
+      "domain": "business-email",
+      "slots": ["ROLE", "EMAIL_SITUATION"],
+      "text": "You are a {{ROLE}}. Write an email {{EMAIL_SITUATION}}. Keep it professional."
+    },
+    {
+      "id": "tpl-news",
+      "domain": "journalism",
+      "slots": ["NEWS_EVENT", "OUTLET_STYLE"],
+      "text": "Write a {{OUTLET_STYLE}} news article reporting that {{NEWS_EVENT}}. About 250 words."
+    },
+    {
+      "id": "tpl-technical",
+      "domain": "technical-doc",
+      "slots": ["TECH_SUBJECT", "DOC_TYPE"],
+      "text": "Write the {{DOC_TYPE}} for {{TECH_SUBJECT}}. Around 250 words."
+    },
+    {
+      "id": "tpl-fiction",
+      "domain": "fiction",
+      "slots": ["FICTION_PREMISE", "TONE"],
+      "text": "Write the opening of a short story. The premise: {{FICTION_PREMISE}}. Tone: {{TONE}}. About 250 words."
+    },
+    {
+      "id": "tpl-forum",
+      "domain": "forum",
+      "slots": ["FORUM_QUESTION", "FORUM_VENUE"],
+      "text": "Write a reply on {{FORUM_VENUE}} answering this question: {{FORUM_QUESTION}}. About 200 words."
+    }
+  ]
+}

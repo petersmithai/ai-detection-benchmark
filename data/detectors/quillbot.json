@@ -1,0 +1,8 @@
+{
+  "slug": "quillbot",
+  "name": "QuillBot AI Detector",
+  "vendor": "QuillBot (Learneo)",
+  "url": "https://quillbot.com/ai-content-detector",
+  "note": "Per-cycle history. Populated by npm run score once a cycle is published; a synthetic cycle never writes here.",
+  "cycles": []
+}
