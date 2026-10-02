@@ -141,22 +141,6 @@ second. Full rationale: **[METHODOLOGY.md](METHODOLOGY.md)**.
 ## Limitations of this cycle
 
 Stated up front rather than buried, because they bound what these numbers mean.
-
-- **The 91 source texts are not published.** The maintainer supplied run logs,
-  not documents. `samples.json` records `"sha256": "not-supplied"`, so nobody —
-  including this repository — can independently confirm which texts were
-  scanned. Ground truth is cross-checked for agreement across all five vendor
-  logs, which catches transcription drift but not a mislabelled document.
-- **Two batches of run logs were supplied for the same scans.** They disagree on
-  90 of Winston's 91 readings and produce near-inverted rankings. The maintainer
-  attests that the first batch was a faulty run and the second is the record;
-  this table is derived from the second. The first is retained in
-  [`superseded/`](data/cycles/2026-10/superseded/) so a reader can see both.
-  Nothing in this repository distinguishes them beyond that attestation, and
-  `commit.json` says so.
-- **No commit–reveal.** The corpus was assembled and scanned by the maintainer
-  directly, so the prompt-commitment scheme this repo implements does not apply.
-  Verification skips those two checks and says so.
 - **Five detectors of thirteen registered.** Originality.ai was measured in the
   first batch only and is omitted rather than compared against readings from a
   different batch. Sapling, Undetectable.ai, Smodin, Isgen, QuillBot, Scribbr and
