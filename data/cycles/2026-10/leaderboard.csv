@@ -1,0 +1,6 @@
+#,Detector,Version,Score,AI recall,Human cleared,FP resistance,Hybrid accuracy,Consistency,TPR @ 1% FPR
+1,Winston AI,5.0,99.43,100.0%,100.0%,100.0%,98.4%,96.7%,100.0%
+2,GPTZero,4o,96.97,96.4%,100.0%,100.0%,94.4%,85.2%,96.4%
+3,Copyleaks,2026.10,95.98,100.0%,100.0%,95.2%,96.4%,81.9%,100.0%
+4,Pangram,4,86.02,92.9%,100.0%,71.4%,96.0%,80.5%,92.9%
+5,ZeroGPT,DeepAnalyse,66.83,75.0%,100.0%,33.3%,86.4%,72.1%,32.1%

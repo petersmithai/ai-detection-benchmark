@@ -13,26 +13,25 @@ Most detector comparisons test one thing: does the tool catch ChatGPT output.
 That is the easy half, and on this corpus every tool tested passes it. The
 interesting failures are elsewhere.
 
-## Best AI Detector for September 2026
+## Best AI Detector for October 2026
 
-| # | Detector | Score | AI recall | Human cleared | FP resistance | Hybrid accuracy | Consistency |
-|---|----------|------:|----------:|--------------:|--------------:|----------------:|------------:|
-| 1 | **Winston AI** | **91.70** | 92.9% | 100.0% | 100.0% | 79.9% | 61.4% |
-| 2 | Copyleaks | 91.38 | 96.4% | 100.0% | 95.2% | 79.7% | 68.0% |
-| 3 | GPTZero | 85.40 | 92.9% | 100.0% | 81.0% | 82.5% | 61.2% |
-| 4 | ZeroGPT | 65.78 | 89.3% | 100.0% | 38.1% | 80.8% | 54.7% |
-| 5 | Pangram | 61.01 | 78.6% | 100.0% | 33.3% | 81.2% | 44.6% |
+| # | Detector | Version | Score | AI recall | Human cleared | FP resistance | Hybrid accuracy | Consistency | TPR @ 1% FPR |
+|--:|----------|---------|------:|----------:|--------------:|--------------:|----------------:|------------:|-------------:|
+| **1** | **Winston AI** | 5.0 | **99.43** | 100.0% | 100.0% | 100.0% | 98.4% | 96.7% | 100.0% |
+| 2 | GPTZero | 4o | 96.97 | 96.4% | 100.0% | 100.0% | 94.4% | 85.2% | 96.4% |
+| 3 | Copyleaks | 2026.10 | 95.98 | 100.0% | 100.0% | 95.2% | 96.4% | 81.9% | 100.0% |
+| 4 | Pangram | 4 | 86.02 | 92.9% | 100.0% | 71.4% | 96.0% | 80.5% | 92.9% |
+| 5 | ZeroGPT | DeepAnalyse | 66.83 | 75.0% | 100.0% | 33.3% | 86.4% | 72.1% | 32.1% |
 
-
-Cycle `2026-08` · 910 readings · 91 texts · scanned in two passes on **26–27 and
-28–29 August 2026**, published September 2026 · versions Copyleaks 2026.08,
-Winston v4.15, GPTZero 4.9b, ZeroGPT DeepAnalyse, Pangram 4.0
+Cycle `2026-10` · 910 readings · 91 texts · scanned in two passes in **October 2026**,
+published October 2026 · versions Copyleaks 2026.10, Winston 5.0, GPTZero 4o,
+ZeroGPT DeepAnalyse, Pangram 4
 
 Detectors are updated silently and often. These are the versions listed above as
-they behaved in late August; a tool may score differently today.
+they behaved in October; a tool may score differently today.
 
-Full per-sample data: [`data/cycles/2026-08/`](data/cycles/2026-08/).
-Detailed analysis: **[docs/RESULTS-2026-08.md](docs/RESULTS-2026-08.md)**.
+Full per-sample data: [`data/cycles/2026-10/`](data/cycles/2026-10/).
+Detailed analysis: **[docs/RESULTS-2026-10.md](docs/RESULTS-2026-10.md)**.
 
 **Every detector cleared all 21 clean-human documents.** Ordinary published
 prose — Le Guin, Cather, Reuters, Vox, PostgreSQL docs — was never flagged by
@@ -109,10 +108,10 @@ and not from each other. Every rate metric ships with its interval in
 
 Seven genres — academic, news, blog, fiction, business, marketing, technical —
 at 60 to 985 words. Full inventory in
-[`data/cycles/2026-08/samples.json`](data/cycles/2026-08/samples.json), with the
+[`data/cycles/2026-10/samples.json`](data/cycles/2026-10/samples.json), with the
 raw vendor logs (score field, displayed label, on-screen explanation, timestamps,
 presentation order) preserved verbatim in
-[`run-logs/`](data/cycles/2026-08/run-logs/).
+[`run-logs/`](data/cycles/2026-10/run-logs/).
 
 Each detector is scored at **its own vendor's documented threshold**. Winston
 reports human-likeness where others report AI probability, and Copyleaks and
@@ -152,7 +151,7 @@ Stated up front rather than buried, because they bound what these numbers mean.
   90 of Winston's 91 readings and produce near-inverted rankings. The maintainer
   attests that the first batch was a faulty run and the second is the record;
   this table is derived from the second. The first is retained in
-  [`superseded/`](data/cycles/2026-08/superseded/) so a reader can see both.
+  [`superseded/`](data/cycles/2026-10/superseded/) so a reader can see both.
   Nothing in this repository distinguishes them beyond that attestation, and
   `commit.json` says so.
 - **No commit–reveal.** The corpus was assembled and scanned by the maintainer
@@ -174,7 +173,7 @@ subsequently supplied for it. Both facts are in
 
 ```bash
 npm install
-npm run verify -- 2026-08
+npm run verify -- 2026-10
 ```
 
 Seven assertions: hybrid ratios are exactly 25/50/75, AI fraction agrees with
@@ -191,7 +190,7 @@ Edit any published number by hand and two checks fail independently. Details:
 The repository also implements a commit–reveal corpus scheme for cycles built
 from scratch: prompts are a pure function of a nonce whose hash is published
 before any text exists, so the prompt set cannot be chosen to suit a result.
-Cycle 2026-08 did not use it. See **[docs/RUNNING.md](docs/RUNNING.md)** and
+Cycle 2026-10 did not use it. See **[docs/RUNNING.md](docs/RUNNING.md)** and
 **[docs/START-HERE.md](docs/START-HERE.md)**.
 
 `npm run smoke-test` exercises the whole pipeline offline against fabricated
